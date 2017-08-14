@@ -17,7 +17,7 @@ content:`
     </p> ` 
     
 };
-function createTemplate (data){
+function createTemplate(data){
     var title = data.title;
     var heading = data.heading;
     var date= data.date;
@@ -61,7 +61,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(createTemlate(articleOne));
+  res.sendFile(createTemplate(articleOne));
 });
 
 
